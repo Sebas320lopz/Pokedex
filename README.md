@@ -1,69 +1,36 @@
-# React + TypeScript + Vite
+#PokeApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PokeApp es una aplicación web desarrollada con **React + TypeScript + Vite** que permite consultar información de diferentes Pokémon consumiendo la [PokeAPI](https://pokeapi.co/).
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías usadas
+-React
+-TypeScript
+-Vite
+-CSS Modules / SCSS (si usas estilos personalizados)
+-PokeAPI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
+-Búsqueda de Pokémon por nombre o ID.
+-Visualización de imágenes y datos principales (tipos, habilidades, estadísticas).
+-Diseño responsivo para móviles y desktop.
+-Carga rápida gracias a Vite.
 
-## Expanding the ESLint configuration
+##Vista previa
+<img width="1889" height="883" alt="image" src="https://github.com/user-attachments/assets/a10c3ac2-8b97-4037-92ce-bec70f8b9af8" />
+<img width="384" height="847" alt="image" src="https://github.com/user-attachments/assets/607f183f-9b18-429e-8de3-2966cb56ad01" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ 
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+##Instalación y ejecución
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Clona el repositorio**   
+  git clone https://github.com/tuusuario/pokeapp.git
+  cd pokeapp
+3. **Instala dependencias**
+  npm install
+4. **Inicia el servidor de desarrollo**
+  npm run dev
+5. **Luego abre en tu navegador:**
+  http://localhost:5173/
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
