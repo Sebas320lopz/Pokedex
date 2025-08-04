@@ -15,7 +15,7 @@ PokeApp es una aplicación web desarrollada con **React + TypeScript + Vite** qu
 -Diseño responsivo para móviles y desktop.
 -Carga rápida gracias a Vite.
 
-##Vista previa
+## Vista previa
 <img width="1889" height="883" alt="image" src="https://github.com/user-attachments/assets/a10c3ac2-8b97-4037-92ce-bec70f8b9af8" />
 <img width="384" height="847" alt="image" src="https://github.com/user-attachments/assets/607f183f-9b18-429e-8de3-2966cb56ad01" />
 
