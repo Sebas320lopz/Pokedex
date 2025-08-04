@@ -2,14 +2,14 @@
 
 PokeApp es una aplicación web desarrollada con **React + TypeScript + Vite** que permite consultar información de diferentes Pokémon consumiendo la [PokeAPI](https://pokeapi.co/).
 
-## 🚀 Tecnologías usadas
+## Tecnologías usadas
 -React
 -TypeScript
 -Vite
 -CSS Modules / SCSS (si usas estilos personalizados)
 -PokeAPI
 
-## ✨ Funcionalidades
+## Funcionalidades
 -Búsqueda de Pokémon por nombre o ID.
 -Visualización de imágenes y datos principales (tipos, habilidades, estadísticas).
 -Diseño responsivo para móviles y desktop.
