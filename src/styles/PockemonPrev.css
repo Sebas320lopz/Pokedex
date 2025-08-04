@@ -1,0 +1,35 @@
+/* Contenedor de grid */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Por defecto 1 columna */
+  gap: 10px; /* espacio entre tarjetas */
+  padding: 10px;
+}
+
+/* Cuando la pantalla sea de al menos 768px, usa 8 columnas */
+@media (min-width: 768px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Estilos de las tarjetas */
+.pokemon-card {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen responsiva */
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
